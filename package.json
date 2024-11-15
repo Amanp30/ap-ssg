@@ -1,0 +1,49 @@
+{
+  "name": "ap-ssg",
+  "version": "1.0.0",
+  "description": "Static Site Generator",
+  "main": "lib/index.js",
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "bin": {
+    "ap-ssg": "bin/cli.js"
+  },
+  "scripts": {
+    "ap-ssg": "npx ap-ssg"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amanp30/ap-ssg.git"
+  },
+  "author": "Aman Pareek (https://amanpareek.in/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amanp30/ap-ssg/issues"
+  },
+  "homepage": "https://github.com/amanp30/ap-ssg#readme",
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "6.0.0",
+    "ap-sitemap": "1.0.0",
+    "autoprefixer": "10.4.20",
+    "chokidar": "4.0.1",
+    "clean-webpack-plugin": "4.0.0",
+    "cssnano": "7.0.6",
+    "fs-extra": "11.2.0",
+    "gulp": "5.0.0",
+    "gulp-postcss": "10.0.0",
+    "html-minifier": "4.0.0",
+    "joi": "17.13.3",
+    "postcss": "8.4.48",
+    "postcss-loader": "8.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.26.0",
+    "@babel/preset-env": "7.26.0",
+    "babel-loader": "9.2.1",
+    "terser-webpack-plugin": "5.3.10",
+    "webpack": "5.96.1",
+    "webpack-cli": "5.1.4"
+  }
+}
