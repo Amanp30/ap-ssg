@@ -1,9 +1,7 @@
 #!/usr/bin/env node
 
 const { ssg } = require("../lib");
-
-const fs = require("fs-extra");
-const path = require("path");
+const folderSetup = require("../lib/utils/folderSetup");
 
 switch (process.argv[2]) {
   case undefined:
@@ -13,6 +11,10 @@ switch (process.argv[2]) {
   case "watch":
     ssg.watch();
     break;
+
+  case "folder-setup":
+    folderSetup();
+    break
 
   default:
     console.log("Unknown command ");
