@@ -4,7 +4,7 @@ const { ssg } = require("../lib");
 const folderSetup = require("../lib/utils/folderSetup");
 
 switch (process.argv[2]) {
-  case undefined:
+  case "build":
     ssg.generate();
     break;
 
@@ -18,6 +18,6 @@ switch (process.argv[2]) {
 
   default:
     console.log("Unknown command ");
-    console.log("   - use `npx ap-ssg` to generate build  ");
+    console.log("   - use `npx ap-ssg build` to generate build  ");
     break;
 }

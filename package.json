@@ -25,11 +25,13 @@
   "homepage": "https://github.com/amanp30/ap-ssg#readme",
   "dependencies": {
     "@fullhuman/postcss-purgecss": "6.0.0",
+    "ap-breadcrumb": "1.1.0",
     "ap-sitemap": "1.0.0",
     "autoprefixer": "10.4.20",
     "chokidar": "4.0.1",
     "clean-webpack-plugin": "4.0.0",
     "cssnano": "7.0.6",
+    "escape-html": "1.0.3",
     "fs-extra": "11.2.0",
     "gulp": "5.0.0",
     "gulp-postcss": "10.0.0",
