@@ -25,6 +25,7 @@
   "homepage": "https://github.com/amanp30/ap-ssg#readme",
   "dependencies": {
     "@fullhuman/postcss-purgecss": "6.0.0",
+    "ap-assets-extractor": "1.0.0",
     "ap-breadcrumb": "1.1.0",
     "ap-sitemap": "1.0.0",
     "autoprefixer": "10.4.20",
