@@ -11,7 +11,7 @@
     "ap-ssg": "bin/cli.js"
   },
   "scripts": {
-    "ap-ssg": "npx ap-ssg"
+    "ap-ssg": "npx ap-ssg build"
   },
   "repository": {
     "type": "git",
@@ -38,6 +38,7 @@
     "gulp-postcss": "10.0.0",
     "html-minifier": "4.0.0",
     "joi": "17.13.3",
+    "jsonminify": "0.4.2",
     "postcss": "8.4.48",
     "postcss-loader": "8.1.1"
   },
