@@ -27,7 +27,7 @@
     "@fullhuman/postcss-purgecss": "6.0.0",
     "ap-assets-extractor": "1.0.0",
     "ap-breadcrumb": "1.1.0",
-    "ap-sitemap": "1.0.0",
+    "ap-sitemap": "1.1.0",
     "autoprefixer": "10.4.20",
     "chokidar": "4.0.1",
     "clean-webpack-plugin": "4.0.0",
