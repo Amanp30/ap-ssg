@@ -1,18 +1,21 @@
 {
   "name": "ap-ssg",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Static Site Generator",
   "main": "lib/index.js",
   "files": [
     "bin",
     "lib",
-    "gulpfile",
-    "apssg-logo.png"
+    "apssg-logo.png",
+    "README.md"
   ],
   "bin": {
     "ap-ssg": "bin/cli.js"
   },
   "scripts": {
+    "ap-ssg:build": "npx ap-ssg build",
+    "ap-ssg:init": "npx ap-ssg init",
+    "ap-ssg:folder-setup": "npx ap-ssg folder-setup"
   },
   "repository": {
     "type": "git",
