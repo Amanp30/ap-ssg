@@ -1,11 +1,13 @@
 {
   "name": "ap-ssg",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Static Site Generator",
   "main": "lib/index.js",
   "files": [
     "bin",
-    "lib"
+    "lib",
+    "gulpfile",
+    "apssg-logo.png"
   ],
   "bin": {
     "ap-ssg": "bin/cli.js"
