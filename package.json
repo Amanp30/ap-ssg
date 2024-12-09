@@ -11,14 +11,13 @@
     "ap-ssg": "bin/cli.js"
   },
   "scripts": {
-    "ap-ssg": "npx ap-ssg build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/amanp30/ap-ssg.git"
   },
   "author": "Aman Pareek (https://amanpareek.in/)",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/amanp30/ap-ssg/issues"
   },
