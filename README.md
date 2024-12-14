@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./apssg-logo.png" alt="Centered Image" />
+  <img src="https://github.com/Amanp30/ap-ssg/blob/main/apssg-logo.png" alt="Centered Image" />
 </p>
 
 <p align="center"><strong>Effortless Static Site Generation</strong></p>
