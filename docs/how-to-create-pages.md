@@ -29,11 +29,19 @@ const pageContent = `
   <p>Place your HTML content for the page here.</p>
 `;
 
-const options = {};
+const options = {
+  insertHead: [
+    "<link rel=\"stylesheet\" href=\"styles.css\">",
+    "<script src=\"script.js\"></script>"
+  ],
+  insertBodyEnd: ["<script src=\"/assets/js/some_js_file.js\"></script>"]
+};
 
 ssg
   .addPage(pageConfig, pageContent, options)
-  .catch((error) => console.error("Error generating page with ap-utils:", error));
+  .catch((error) =>
+    console.error("Error generating page with ap-utils:", error)
+  );
 ```
 
 ## Required Fields in pageConfig
@@ -57,7 +65,7 @@ These fields are not mandatory but can enhance your page's functionality and SEO
 ### `metaTitleTemplate`
 
 Define a template for the meta title. For example, `"My Site - %s"` will replace `%s` with the page title.  
-*(Details in the [setup config guide](./setup-config.md).)*
+_(Details in the [setup config guide](./setup-config.md).)_
 
 ### `shouldFollowLinks`
 
@@ -103,13 +111,33 @@ Define a template for the meta title. For example, `"My Site - %s"` will replace
 
 - **Type**: `array`  
   Defines a structured breadcrumb trail for better navigation and rich results in search engines.  
-  *(Refer to the [BreadcrumbList schema](./schemas/breadCrumb.md) for details.)*
+  _(Refer to the [BreadcrumbList schema](./schemas/breadCrumb.md) for details.)_
 
 ## Other Schema Types for `pageConfig`
 
-* **Article Schema**: To implement an article schema, see the detailed guide [here](./schemas/article.md).
-* **BlogPosting Schema**: For setting up the BlogPosting schema, refer to this article [here](./schemas/blogpost.md).
-* **SoftwareApplication Schema**: Learn how to configure the SoftwareApplication schema [here](./schemas/software.md).
+- **Article Schema**: To implement an article schema, see the detailed guide [here](./schemas/article.md).
+- **BlogPosting Schema**: For setting up the BlogPosting schema, refer to this article [here](./schemas/blogpost.md).
+- **SoftwareApplication Schema**: Learn how to configure the SoftwareApplication schema [here](./schemas/software.md).
+
+## The `options` Object
+
+The options object allows you to inject additional HTML elements, such as meta tags, scripts, and stylesheets, into the page.
+
+Accepted Fields
+
+- `insertHead`: An array of strings to insert content into the <head> section of the page (e.g., stylesheets, meta tags, or scripts).
+- `insertBodyEnd`: An array of strings to insert content at the end of the <body> section (e.g., JavaScript files).
+
+**Example**
+
+```javascript
+{
+    insertHead: [
+      '<link rel="stylesheet" href="styles.css">',
+      '<script src="script.js"></script>',
+    ],
+    insertBodyEnd: ['<script src="/assets/js/some_js_file.js"></script>'],
+  }
+```
 
 ## Next step: [Generate build](./generate-build.md)
-
