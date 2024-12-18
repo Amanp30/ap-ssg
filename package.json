@@ -1,13 +1,15 @@
 {
   "name": "ap-ssg",
-  "version": "1.0.5",
+  "version": "1.0.11",
   "description": "Static Site Generator",
-  "main": "lib/index.js",
+  "types": "./types/types.d.ts",
+  "main": "./lib/index.js",
   "files": [
     "bin",
     "lib",
     "apssg-logo.png",
-    "README.md"
+    "README.md",
+    "types"
   ],
   "bin": {
     "ap-ssg": "bin/cli.js"
@@ -56,11 +58,12 @@
   },
   "homepage": "https://github.com/amanp30/ap-ssg#readme",
   "dependencies": {
-    "@fullhuman/postcss-purgecss": "6.0.0",
+    "@babel/core": "7.26.0",
+    "@babel/preset-env": "7.26.0",
     "ap-assets-extractor": "1.0.0",
-    "ap-breadcrumb": "1.1.0",
     "ap-sitemap": "1.1.0",
     "autoprefixer": "10.4.20",
+    "babel-loader": "9.2.1",
     "chokidar": "4.0.1",
     "clean-webpack-plugin": "4.0.0",
     "cssnano": "7.0.6",
@@ -72,14 +75,11 @@
     "joi": "17.13.3",
     "jsonminify": "0.4.2",
     "postcss": "8.4.48",
-    "postcss-loader": "8.1.1"
+    "postcss-loader": "8.1.1",
+    "terser-webpack-plugin": "5.3.10",
+    "webpack": "5.97.1"
   },
   "devDependencies": {
-    "@babel/core": "7.26.0",
-    "@babel/preset-env": "7.26.0",
-    "babel-loader": "9.2.1",
-    "terser-webpack-plugin": "5.3.10",
-    "webpack": "5.96.1",
     "webpack-cli": "5.1.4"
   }
 }
