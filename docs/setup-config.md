@@ -12,37 +12,36 @@ object as shown below:
 
 ```javascript
 module.exports = {
-  "mode": "development",
-  "websiteName": "Example Website",
-  "websiteDescription": "Example website description",
-  "productionURL": "https://example.com",
-  "developmentURL": "http://localhost:63342/ap-ssg/build",
-  "metaTitleTemplate": "%title - %siteName",
-  "themeColor": "#3d0665",
-  "websiteLang": "en-us",
-  "organization": {},
-  "integrations": {
-    "googleAnalytics": "",
-    "bingWebmasters": "",
-    "googleWebmasters": "",
-    "hotjarAnalytics": "",
-    "googleTagManager": "",
-    "facebookPixel": "",
-    "microsoftClarity": ""
+  mode: "development",
+  websiteName: "Example Website",
+  websiteDescription: "Example website description",
+  productionURL: "https://example.com",
+  developmentURL: "http://localhost:63342/ap-ssg/build",
+  metaTitleTemplate: "%title - %siteName",
+  themeColor: "#3d0665",
+  websiteLang: "en-us",
+  autoImgAlt: true,
+  organization: {},
+  integrations: {
+    googleAnalytics: "",
+    bingWebmasters: "",
+    googleWebmasters: "",
+    hotjarAnalytics: "",
+    googleTagManager: "",
+    facebookPixel: "",
+    microsoftClarity: "",
   },
-  "pwa": {
-    "enabled": true,
-    "description": "Your pwa description",
-    "short_name": "Example",
-    "htmlFiles": [
-      "index.html"
-    ],
-    "start_url": "/index.html",
-    "display": "standalone",
-    "background_color": "#ffffff",
-    "theme_color": "#3d0665",
-    "orientation": "portrait"
-  }
+  pwa: {
+    enabled: true,
+    description: "Your pwa description",
+    short_name: "Example",
+    htmlFiles: ["index.html"],
+    start_url: "/index.html",
+    display: "standalone",
+    background_color: "#ffffff",
+    theme_color: "#3d0665",
+    orientation: "portrait",
+  },
 };
 ```
 
@@ -59,40 +58,48 @@ Defines the environment. Acceptable values are `production` or `development`.
 
 ---
 
-#### `websiteName` *(required)*
+#### `websiteName` _(required)_
 
 The name of your website.
 
 ---
 
-#### `websiteDescription` *(required)*
+#### `autoImgAlt` _(optional)_
+
+Allow adding alt and title attributes to img tags using image src.
+
+Default `true`
+
+---
+
+#### `websiteDescription` _(required)_
 
 A brief description of your website.
 
 ---
 
-#### `productionURL` *(required)*
+#### `productionURL` _(required)_
 
 The live URL of your website (e.g., `https://example.com`).
 
 ---
 
-#### `developmentURL` *(required)*
+#### `developmentURL` _(required)_
 
 The local URL for development.
 
 ---
 
-#### `metaTitleTemplate` *(optional)*
+#### `metaTitleTemplate` _(optional)_
 
 A template for page titles, used in meta tags.
 
-- **Example**: `"%title - %siteName"` will format titles as *"Page Title - Example Website"*.
+- **Example**: `"%title - %siteName"` will format titles as _"Page Title - Example Website"_.
 - **Default**: `"%title"` (only the page title is displayed).
 
 ---
 
-#### `themeColor` *(optional)*
+#### `themeColor` _(optional)_
 
 Sets the theme color for mobile devices (e.g., browser tab color).
 
@@ -170,21 +177,16 @@ For each integration, simply replace the placeholder with your actual service ID
 
 ## PWA Configurations
 
-* **enabled**: If you do not wish to create a Progressive Web App, set enabled to false.
-* **short_name**: This will be displayed on mobile home screens when users install the PWA.
-* **htmlFiles**: Only include HTML files that are crucial for the PWA (e.g., index.html). You can leave this array empty
+- **enabled**: If you do not wish to create a Progressive Web App, set enabled to false.
+- **short_name**: This will be displayed on mobile home screens when users install the PWA.
+- **htmlFiles**: Only include HTML files that are crucial for the PWA (e.g., index.html). You can leave this array empty
   if needed.
-* **start_url**: This URL is the page that will open when the app starts on a mobile device or desktop. Typically, this
+- **start_url**: This URL is the page that will open when the app starts on a mobile device or desktop. Typically, this
   would be your homepage, e.g., /index.html.
-* **Display** Mode: Set the display mode to standalone, fullscreen, or minimal-ui, depending on how you want the PWA to
+- **Display** Mode: Set the display mode to standalone, fullscreen, or minimal-ui, depending on how you want the PWA to
   behave when launched.
 
 ## Next Step: Setup Folder Structure
 
 Now that you've set up your configuration file, the next step is
 to [set up the folder structure](./folder-structure-setup.md).
-
-
-
-
-
