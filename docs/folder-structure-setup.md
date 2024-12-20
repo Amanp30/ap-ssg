@@ -23,15 +23,16 @@ If you prefer manual setup, your project structure must look like this:
 ```plaintext
 root/
 │
-├── src/              # Main source directory
-│   ├── assets/       # Static resources
-│   │   ├── css/      # CSS files for styling
+├── src/              # Main source directory for project files
+│   ├── assets/       # Static resources for the site
+│   │   ├── css/      # CSS files for styling the website
 │   │   ├── js/       # JavaScript files for functionality
-│   │   ├── site/     # Site-specific assets (e.g., icons, logos)
-│   │   └── uploads/  # Uploaded files or images
-│   ├── components/   # Reusable UI components
-│   ├── data/         # Data files (e.g., JSON, YAML)
-│   └── pages/        # JavaScript files to generate html pages
+│   │   ├── site/     # Site-specific assets (e.g., icons, logos, fonts)
+│   │   ├── uploads/  # Uploaded media files like images and videos
+│   │   └── robots.txt # Optional: Robots.txt file for controlling web crawlers
+│   ├── components/   # Reusable UI components for building pages
+│   ├── data/         # Data files (e.g., JSON, YAML) for dynamic content
+│   └── pages/        # JavaScript files for generating HTML pages
 ```
 
 ## Folder Details and Usage
@@ -41,19 +42,20 @@ root/
 - **`css/`**: Store your CSS files for styling.
 - **`js/`**: Include your JavaScript files for functionality.
 - **`site/`**: Keep essential site assets, such as:
-    - `apple-touch-icon.png` *(180x180 pixels)*
-    - `favicon-32x32.png` *(32x32 pixels)*
-    - `favicon-16x16.png` *(16x16 pixels)*
-    - `ogImage.png` *(1200x630 pixels, used as the default OpenGraph image for social sharing)*
-    - *If `pwa.enabled` is set to `true` in `apssg.config.js`, also include:*
-        - `android-chrome-192x192.png`
-        - `android-chrome-512x512.png`
-    - *if pwa enabled Include screenshots for pwa have these images inside site folder like this in the format*
-        - **format**: `screen-[index]-[width]x[height].png`
-        - examples
-        - `screen-1-720x720.png`
-        - `screen-2-720x720.png`
+  - `apple-touch-icon.png` _(180x180 pixels)_
+  - `favicon-32x32.png` _(32x32 pixels)_
+  - `favicon-16x16.png` _(16x16 pixels)_
+  - `ogImage.png` _(1200x630 pixels, used as the default OpenGraph image for social sharing)_
+  - _If `pwa.enabled` is set to `true` in `apssg.config.js`, also include:_
+    - `android-chrome-192x192.png`
+    - `android-chrome-512x512.png`
+  - _if pwa enabled Include screenshots for pwa have these images inside site folder like this in the format_
+    - **format**: `screen-[index]-[width]x[height].png`
+    - examples
+    - `screen-1-720x720.png`
+    - `screen-2-720x720.png`
 - **`uploads/`**: Use this folder for images or other uploaded files.
+- **`robots.txt`**: Optional You can create a custom `robots.txt` file. If not provided, a default `robots.txt` file will be generated automatically.
 
 ---
 
