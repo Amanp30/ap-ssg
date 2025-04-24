@@ -6,7 +6,7 @@ const generateConfig = require("../lib/utils/generateConfig");
 switch (process.argv[2]) {
   case "build":
     const { ssg } = require("../lib");
-    ssg.generate();
+    ssg.generate({ shouldExitAfterBuild: true });
     break;
 
   case "watch":
@@ -28,7 +28,7 @@ switch (process.argv[2]) {
     // console.log("   - use `npx ap-ssg watch` to watch for changes");
     console.log("   - use `npx ap-ssg folder-setup` to setup folder structure");
     console.log(
-      "   - use `npx ap-ssg init` to initialize the config file and structure",
+      "   - use `npx ap-ssg init` to initialize the config file and structure"
     );
     break;
 }

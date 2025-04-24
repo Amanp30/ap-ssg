@@ -1,14 +1,13 @@
 {
   "name": "ap-ssg",
-  "version": "1.0.12",
+  "version": "1.0.14",
   "description": "Static Site Generator",
   "main": "./lib/index.js",
   "files": [
     "bin",
     "lib",
     "apssg-logo.png",
-    "README.md",
-    "types"
+    "README.md"
   ],
   "bin": {
     "ap-ssg": "bin/cli.js"
