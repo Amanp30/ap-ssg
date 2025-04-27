@@ -35,6 +35,8 @@ const options = {
     "<script src=\"script.js\"></script>"
   ],
   insertBodyEnd: ["<script src=\"/assets/js/some_js_file.js\"></script>"]
+  insertHead: ['<link rel="stylesheet" href="/assets/css/styles.css">'],
+  insertBodyEnd: ['<script src="/assets/js/some_js_file.js"></script>'],
 };
 
 ssg
@@ -135,6 +137,7 @@ Accepted Fields
     insertHead: [
       '<link rel="stylesheet" href="styles.css">',
       '<script src="script.js"></script>',
+      '<link rel="stylesheet" href="/assets/css/styles.css">',
     ],
     insertBodyEnd: ['<script src="/assets/js/some_js_file.js"></script>'],
   }
