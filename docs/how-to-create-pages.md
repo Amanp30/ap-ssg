@@ -21,7 +21,7 @@ const pageConfig = {
   description: "Page Description",
   updatedAt: "2024-11-04T10:00:00Z",
   createdAt: "2024-11-04T10:00:00Z",
-  path: "/page-path"
+  path: "/page-path",
 };
 
 const pageContent = `
@@ -30,11 +30,6 @@ const pageContent = `
 `;
 
 const options = {
-  insertHead: [
-    "<link rel=\"stylesheet\" href=\"styles.css\">",
-    "<script src=\"script.js\"></script>"
-  ],
-  insertBodyEnd: ["<script src=\"/assets/js/some_js_file.js\"></script>"]
   insertHead: ['<link rel="stylesheet" href="/assets/css/styles.css">'],
   insertBodyEnd: ['<script src="/assets/js/some_js_file.js"></script>'],
 };
@@ -61,6 +56,15 @@ The `pageConfig` object requires the following fields:
 # Optional Fields in `pageConfig`
 
 These fields are not mandatory but can enhance your page's functionality and SEO performance.
+
+### `useCommonCss` Field _(optional)_
+
+You can control whether common CSS files should be included on a specific page using the `useCommonCss` field. This gives you control over whether to include the global common CSS for every page, or to exclude it for specific ones.
+
+- **Type**: `boolean`
+- **Default**: `true`  
+  If `true`, the global `commonCss` will be applied to this page.  
+  If `false`, the global `commonCss` will **not** be applied to this page.
 
 ## SEO and Indexing Options
 
@@ -135,8 +139,6 @@ Accepted Fields
 ```javascript
 {
     insertHead: [
-      '<link rel="stylesheet" href="styles.css">',
-      '<script src="script.js"></script>',
       '<link rel="stylesheet" href="/assets/css/styles.css">',
     ],
     insertBodyEnd: ['<script src="/assets/js/some_js_file.js"></script>'],
