@@ -66,6 +66,15 @@ You can control whether common CSS files should be included on a specific page u
   If `true`, the global `commonCss` will be applied to this page.  
   If `false`, the global `commonCss` will **not** be applied to this page.
 
+### `useCommonJs` Field _(optional)_
+
+You can control whether common JS files should be included on a specific page using the `useCommonJs` field. This gives you control over whether to include the global common JS for every page, or to exclude it for specific ones.
+
+- **Type**: `boolean`
+- **Default**: `true`  
+  If `true`, the global `commonJs` will be applied to this page.  
+  If `false`, the global `commonJs` will **not** be applied to this page.
+
 ## SEO and Indexing Options
 
 ### `metaTitleTemplate`
