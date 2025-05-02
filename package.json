@@ -1,6 +1,6 @@
 {
   "name": "ap-ssg",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "Static Site Generator",
   "main": "./lib/index.js",
   "files": [
