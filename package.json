@@ -1,6 +1,6 @@
 {
   "name": "ap-ssg",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "description": "A fast, modular, SEO-optimized static site generator that minifies CSS, JS, and HTML for improved performance. It also supports JSON-LD, sitemap generation, and more, making it ideal for production-ready websites.",
   "main": "./lib/index.js",
   "files": [
