@@ -1,5 +1,5 @@
-import { ArticleBlogpostCommon } from "./articleBlogpostCommon";
-import { PersonObject } from "./person";
+import ArticleBlogpostCommon = require("./articleBlogpostCommon");
+import PersonObject = require("./person");
 
 interface ArticleOptions extends ArticleBlogpostCommon {
   /**
@@ -25,4 +25,4 @@ interface ArticleOptions extends ArticleBlogpostCommon {
   editor?: PersonObject;
 }
 
-export { ArticleOptions };
+export = ArticleOptions;

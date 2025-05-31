@@ -6,9 +6,14 @@
   "files": [
     "bin",
     "lib",
+    "types",
     "apssg-logo.png",
     "README.md"
   ],
+  "type": "commonjs",
+  "exports": {
+    ".": "./lib/index.js"
+  },
   "bin": {
     "ap-ssg": "bin/cli.js"
   },

@@ -1,4 +1,4 @@
-import { ArticleBlogpostCommon } from "./articleBlogpostCommon";
+import ArticleBlogpostCommon = require("./articleBlogpostCommon");
 
 interface BlogPostOptions extends ArticleBlogpostCommon {
   /**
@@ -25,4 +25,4 @@ interface BlogPostOptions extends ArticleBlogpostCommon {
   alternativeHeadline?: string;
 }
 
-export { BlogPostOptions };
+export = BlogPostOptions;

@@ -1,4 +1,4 @@
-export interface Software {
+interface Software {
   type?: "software";
 
   /**
@@ -54,3 +54,5 @@ export interface Software {
    */
   softwarePlatform?: "Web" | "Mobile" | "Desktop" | "Server" | "IoT" | "Other";
 }
+
+export = Software;
