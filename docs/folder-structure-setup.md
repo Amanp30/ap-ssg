@@ -30,6 +30,7 @@ root/
 │   │   ├── site/     # Site-specific assets (e.g., icons, logos, fonts)
 │   │   ├── uploads/  # Uploaded media files like images and videos
 │   │   └── robots.txt # Optional: Robots.txt file for controlling web crawlers
+│   │   └── 404.html  # Custom 404 error page shown when a route is not found
 │   ├── components/   # Reusable UI components for building pages
 │   ├── data/         # Data files (e.g., JSON, YAML) for dynamic content
 │   └── pages/        # JavaScript files for generating HTML pages
@@ -56,6 +57,7 @@ root/
     - `screen-2-720x720.png`
 - **`uploads/`**: Use this folder for images or other uploaded files.
 - **`robots.txt`**: Optional You can create a custom `robots.txt` file. If not provided, a default `robots.txt` file will be generated automatically.
+- **`404.html`**: Optional. You can include a custom `404.html` error page. If not present, a default one will be generated automatically.
 
 ---
 
